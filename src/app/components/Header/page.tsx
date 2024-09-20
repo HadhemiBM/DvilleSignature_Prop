@@ -23,7 +23,8 @@ const Header: React.FC = () => {
                       +971 58 560 6752
                     </div>
                     <div className={(styles.aa_email, styles.hidden_xs)}>
-                      <span className={styles.fa_envelope_o}> 📧</span> info@
+                      <span className={styles.fa_envelope_o}> 📧</span>
+                      info@Deville
                     </div>
                   </div>
                 </div>
