@@ -1,27 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+main {
+  position: relative;
+  z-index: 1; /* Ensure the circles stay above the main content */
+}
+.page-container {
+  background-image: url("../img/gallery/homeBG.webp");
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes sure the container covers the full height of the viewport */
+}
+
+.content-wrapper {
+  flex: 1; /* Pushes the footer to the bottom */
+}
+
+.footer {
+  width: 100%;
+  height: 280px;
+  background-color: #f4fdfd;
+  color: rgb(2, 34, 129);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-family: Balthazar;
+  position: relative;
+  z-index: 50;
 }

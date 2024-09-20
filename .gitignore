@@ -5,9 +5,15 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-
+/src/css
+/src/fonts
+/src/js
+/src/scss
+/src/html
 # testing
 /coverage
+/src/app/sigin
+/src/app/signup
 
 # next.js
 /.next/

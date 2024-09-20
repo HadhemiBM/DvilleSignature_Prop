@@ -1,0 +1,14 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(78, 75, 75);
+  /* background-image: url("../img/gallery/homeBG.webp"); */
+
+  width: 100%;
+}
