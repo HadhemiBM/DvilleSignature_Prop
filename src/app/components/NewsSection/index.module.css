@@ -1,0 +1,161 @@
+.bodyy {
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-family: sans-serif;
+
+  align-content: center;
+}
+.titleContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PropertiesTitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  color: #59abe3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.titleDecoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 90px; /* Length of the horizontal line */
+  height: 2px; /* Thickness of the line */
+  background-color: #59abe3;
+}
+
+.verticalLine {
+  height: 12px; /* Height of the vertical line */
+  width: 2px; /* Thickness of the vertical line */
+  background-color: #59abe3;
+  margin: 0 4px; /* Space between horizontal and vertical lines */
+}
+.PropertiesDescription {
+  margin: 0 0 10px;
+  display: block;
+  margin-block-start: 1em;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  /* font-family: sans-serif; */
+
+  align-self: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 30px;
+  /* background-color: #59abe3; */
+  gap: 20px;
+  padding-bottom: 100px;
+}
+.card_body {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.search_btn {
+  padding: 10px 20px;
+  background-color: rgb(89, 171, 227);
+  color: white;
+  border: none;
+  width: 115px;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cardStatus {
+  display: flex;
+  color: white;
+  left: 8px;
+  background-color: #59abe3;
+  width: 30%;
+  height: 30px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+
+  padding: 4px 4px 4px 4px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+}
+.cardStatusP {
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 0px 0px 0px;
+}
+.findProperty {
+  display: flex;
+  /* background-color: #59abe3; */
+  background-image: url("../../../img/gallery/gris.png");
+  /* background-size: 10%;
+  background-repeat: repeat-z;
+  background-position: center;
+  content: "";
+  height: 250px;
+ 
+  font-family: sans-serif; */
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  justify-content: center;
+  background-repeat: repeat; /* Répète l'image horizontalement et verticalement */
+  background-size: 100px 100px;
+  background-position: center; /* Centre l'image dans le conteneur */
+  padding: 50px 0; /* Ajustez le padding selon vos besoins */
+}
+.findProperty h3 {
+  color: #070707;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.ALL_btn {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #59abe3;
+  font-size: 16px;
+  border: #fff;
+}
+.fa_comment_o:before {
+  content: "\f0e5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+.fa_role_o:before {
+  content: "\f21b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
