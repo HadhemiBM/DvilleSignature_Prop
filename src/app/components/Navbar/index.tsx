@@ -5,8 +5,6 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import styles from "./index.module.css";
 
-
-
 const Navbar: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
   const pathname = usePathname();
@@ -14,7 +12,7 @@ const Navbar: React.FC = () => {
 
   const links = [
     { id: 1, link: "/", name: "HOME" },
-    { id: 2, link: "/properties", name: "PROPERTIES" },
+    { id: 2, link: "/sigin", name: "PROPERTIES" },
     { id: 3, link: "/gallery", name: "GALLERY" },
     { id: 4, link: "/blog", name: "BLOG" },
     { id: 5, link: "/contact", name: "CONTACT" },
