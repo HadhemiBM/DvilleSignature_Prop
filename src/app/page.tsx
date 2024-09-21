@@ -8,6 +8,7 @@ import "./globals.css";
 import Header from "./components/Header/page";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
+import PropertiesSection from "./components/PropertiesSection";
 // import Search from "./components/Search";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
     <div className={styles.Page}>
       <Header />
       <AboutSection />
+      <PropertiesSection />
     </div>
 
     // </div>

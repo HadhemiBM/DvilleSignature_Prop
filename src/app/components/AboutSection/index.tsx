@@ -24,15 +24,19 @@ const AboutSection: React.FC = () => {
         <p className={styles.AboutUsDescription}>
           Your premier partner in discovering the perfect home or investment
           opportunity. Our passion for real estate shines through in our
-          unwavering commitment to delivering exceptional service. We expertly
-          guide you through every step of your property journey, whether you're
-          buying, selling, or renting. With a team of seasoned professionals, we
-          provide tailored solutions and insightful market expertise to meet
-          your unique needs. At Deville Signature Properties, we don’t just find
-          properties; we help you find your dream home, where every detail is
-          catered to with integrity and dedication. Experience the difference
-          with us, and let us help you turn your property dreams into reality.
+          unwavering commitment to delivering exceptional service. <br />
+          We expertly guide you through every step of your property journey,
+          whether you're buying, selling, or renting.
+          <br /> With a team of seasoned professionals, we provide tailored
+          solutions and insightful market expertise to meet your unique needs.{" "}
+          <br />
+          At Deville Signature Properties, we don’t just find properties; we
+          help you find your dream home, where every detail is catered to with
+          integrity and dedication.
+          <br /> Experience the difference with us, and let us help you turn
+          your property dreams into reality.
         </p>
+
         <p className={styles.AboutUsDescriptionName}> &bull; chadha</p>
         <p className={styles.AboutUsDescriptionName}> &bull; Malika</p>
       </div>
