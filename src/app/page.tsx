@@ -7,6 +7,7 @@ import styles from "./index.module.css";
 import "./globals.css";
 import Header from "./components/Header/page";
 import Navbar from "./components/Navbar";
+// import Search from "./components/Search";
 
 export default function Home() {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ export default function Home() {
   return (
     <div className={styles.Page}>
       <Header />
-   
+      {/* <Search /> */}
     </div>
 
     // </div>
