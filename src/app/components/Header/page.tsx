@@ -26,7 +26,6 @@ const Header: React.FC = () => {
 
   return (
     <div className={styles.container1}>
-      {/* Header section, placed over the carousel */}
       <div className={styles.aa_header}>
         <div className={styles.container}>
           <div className={styles.row}>
@@ -260,7 +259,6 @@ const Header: React.FC = () => {
                   value={priceFrom}
                   onChange={(e) => setPriceFrom(Number(e.target.value))}
                   className={styles.slider}
-                  
                 />
                 <span>{priceFrom.toFixed(2)}</span>
                 <span>TO</span>

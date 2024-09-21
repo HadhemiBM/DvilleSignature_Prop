@@ -922,40 +922,30 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   border-width: 0 5px 5px;
 }
 .container1 {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  justify-content: space-between;
-  height: 100%;
-  overflow: hidden;
-  background-color: rgb(78, 75, 75);
-  z-index: 1;
-  min-height: 100%;
-  width: 100%; */
+
+  width: 100%; 
   width: 100%;
   font-family: "Poppins", sans-serif;
-  /* display: flex; */
+
 
   background-color: white;
-  height: 1400px; /* Full height of the viewport */
+  height: 1400px; 
   position: relative;
   overflow: hidden;
 }
 .carousel_inner Image {
   object-fit: cover;
-  height: 700px; /* Make the carousel images cover the full viewport height */
+  height: 700px; 
 }
 .aa_header_right a,
 .aa_header_left {
-  color: white; /* Ensure the text in the header is visible over the carousel */
+  color: white; 
 }
 .ProductInfo {
-  position: absolute; /* change to absolute positioning */
-  top: 50%; /* center vertically */
+  position: absolute; 
+  top: 50%; 
   left: 30%;
-  transform: translate(-50%, -50%); /* adjust positioning */
+  transform: translate(-50%, -50%); 
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -970,7 +960,7 @@ fieldset[disabled] .navbar_default .btn-link:focus {
 }
 
 .carousel-item {
-  position: relative; /* make sure the item is relatively positioned */
+  position: relative; 
 }
 .aa_top_slider_catg {
   font-size: 25px;
@@ -1131,7 +1121,8 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   appearance: none;
   width: 100px;
   height: 8px;
-  /* background-color: rgb(201, 200, 200);  */
+
+ background-color: rgb(201, 200, 200); 
   border: 0.5px solid #d1e1ee;
   margin: 0 10px;
 }
@@ -1140,7 +1131,7 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   appearance: none;
   width: 10px;
   height: 10px;
-  background-color: rgb(89, 171, 227); /* Thumb color */
+  background-color: rgb(89, 171, 227); 
   cursor: pointer;
   border-radius: 50%;
 }
