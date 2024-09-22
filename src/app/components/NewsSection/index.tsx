@@ -48,7 +48,29 @@ const NewsSection: React.FC = () => {
               <span className={styles.fa_role_o}></span> Admin
             </p>
             <p className="card-comment">
-              <span className={styles.fa_comment_o}></span> 6
+              <i className="fa-solid fa-comment"></i> 6
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          <div className={styles.cardStatus}>
+            <p className={styles.cardStatusP}>28 Aout, 2024</p>
+          </div>
+          <Image className="card-img-top" src={I_360} alt="Card image cap" />
+
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">
+              <h3>nom.</h3>
+            </li>
+            <li className="list-group-item">description.</li>
+          </ul>
+          <div className={styles.card_body}>
+            <p className="card-Role">
+              {/* <span className={styles.fa_role_o}></span> Admin */}
+              <i className="fa-solid fa-user"></i> User
+            </p>
+            <p className="card-comment">
+              <i className="fa-solid fa-comment"></i> 6
             </p>
           </div>
         </div>
@@ -69,28 +91,7 @@ const NewsSection: React.FC = () => {
               <span className={styles.fa_role_o}></span> Admin
             </p>
             <p className="card-comment">
-              <span className={styles.fa_comment_o}></span> 6
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className={styles.cardStatus}>
-            <p className={styles.cardStatusP}>28 Aout, 2024</p>
-          </div>
-          <Image className="card-img-top" src={I_360} alt="Card image cap" />
-
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <h3>nom.</h3>
-            </li>
-            <li className="list-group-item">description.</li>
-          </ul>
-          <div className={styles.card_body}>
-            <p className="card-Role">
-              <span className={styles.fa_role_o}></span> Admin
-            </p>
-            <p className="card-comment">
-              <span className={styles.fa_comment_o}></span> 6
+              <i className="fa-solid fa-comment"></i> 6
             </p>
           </div>
         </div>

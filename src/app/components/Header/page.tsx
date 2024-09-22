@@ -35,11 +35,11 @@ const Header: React.FC = () => {
                   <div className="col-md-6 col-sm-6 col-xs-6">
                     <div className={styles.aa_header_left}>
                       <div className={styles.aa_telephone_no}>
-                        <span className={styles.fa_phone}>📞</span>
+                        <i className="fa-solid fa-phone"></i>
                         +971 58 560 6752
                       </div>
                       <div className={(styles.aa_email, styles.hidden_xs)}>
-                        <span className={styles.fa_envelope_o}>📧</span>
+                        <i className="fa-solid fa-envelope"></i>
                         info@Deville
                       </div>
                     </div>
@@ -102,8 +102,7 @@ const Header: React.FC = () => {
               <span className={styles.aa_top_slider_catg}>Duplex</span>
               <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
               <p className={styles.aa_top_slider_location}>
-                <span className={styles.fa_map_marker}></span>
-                Dubai, (UAE)
+                <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
               </p>
               <span className={styles.aa_top_slider_off}>30% OFF</span>
               <p className={styles.aa_top_slider_price}>$460,000</p>
@@ -127,8 +126,7 @@ const Header: React.FC = () => {
               <span className={styles.aa_top_slider_catg}>Duplex</span>
               <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
               <p className={styles.aa_top_slider_location}>
-                <span className={(styles.fa, styles.fa_map_marker)}></span>
-                Dubai, (UAE)
+                <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
               </p>
               <span className={styles.aa_top_slider_off}>30% OFF</span>
               <p className={styles.aa_top_slider_price}>$460,000</p>
@@ -152,8 +150,7 @@ const Header: React.FC = () => {
               <span className={styles.aa_top_slider_catg}>Duplex</span>
               <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
               <p className={styles.aa_top_slider_location}>
-                <span className={(styles.fa, styles.fa_map_marker)}></span>
-                Dubai, (UAE)
+                <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
               </p>
               <span className={styles.aa_top_slider_off}>30% OFF</span>
               <p className={styles.aa_top_slider_price}>$460,000</p>
