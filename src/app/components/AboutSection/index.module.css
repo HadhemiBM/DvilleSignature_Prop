@@ -1,0 +1,86 @@
+.bodyy {
+  background-color: #ffffff;
+  width: 70%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: sans-serif;
+}
+.AboutUSTitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  color: #59abe3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.AboutUsDescription {
+  display: block;
+
+  font-size: 15px;
+  line-height: 2.4rem;
+  unicode-bidi: isolate;
+}
+.AboutUsDescriptionName {
+  margin-left: 20px;
+}
+.AboutUS {
+  width: 54%;
+  /* background-color: #666c70; */
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ImageContainer {
+  width: 42%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #59abe3; */
+}
+.Image {
+  width: 480px;
+  height: 600px;
+}
+
+.titleContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutUSTitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  color: #59abe3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.titleDecoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 90px; /* Length of the horizontal line */
+  height: 2px; /* Thickness of the line */
+  background-color: #59abe3;
+}
+
+.verticalLine {
+  height: 12px; /* Height of the vertical line */
+  width: 2px; /* Thickness of the vertical line */
+  background-color: #59abe3;
+  margin: 0 4px; /* Space between horizontal and vertical lines */
+}

@@ -4,6 +4,7 @@ import "./globals.css";
 import "../css/bootstrap.css";
 import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "DS",
@@ -29,6 +30,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="page-container">
           <Navbar />
           <main className="content-wrapper">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>

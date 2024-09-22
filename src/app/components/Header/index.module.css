@@ -66,7 +66,7 @@
   right: 0;
   top: 0;
   background: transparent;
-  padding: 0px 80px;
+  padding: 0px 20px;
   /* background-image: url("../../../img/gallery/homeBG.webp"); */
   /* background-size: cover;
   background-repeat: no-repeat; */
@@ -114,7 +114,7 @@
   color: #fff;
   float: left;
   letter-spacing: 0.5px;
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 15px;
 }
 
@@ -268,13 +268,16 @@
 .aa_header_left {
   display: inline;
   float: left;
+  /* background-color: #337ab7; */
   width: 100%;
+  justify-content: space-between;
 }
 
 .aa_telephone_no {
   color: #4b4747;
   float: left;
   font-size: 15px;
+  margin-right: 20px;
 }
 
 .aa_telephone_no .span {
@@ -302,6 +305,7 @@
 }
 .hidden_xs {
   color: #ffffff;
+  margin-left: 20px;
 }
 .aa_header_right {
   display: inline;
@@ -922,30 +926,29 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   border-width: 0 5px 5px;
 }
 .container1 {
-
-  width: 100%; 
   width: 100%;
+
   font-family: "Poppins", sans-serif;
 
-
   background-color: white;
-  height: 1400px; 
+  /* height: 1400px;  */
+
   position: relative;
   overflow: hidden;
 }
 .carousel_inner Image {
   object-fit: cover;
-  height: 700px; 
+  height: 700px;
 }
 .aa_header_right a,
 .aa_header_left {
-  color: white; 
+  color: white;
 }
 .ProductInfo {
-  position: absolute; 
-  top: 50%; 
+  position: absolute;
+  top: 50%;
   left: 30%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -960,7 +963,7 @@ fieldset[disabled] .navbar_default .btn-link:focus {
 }
 
 .carousel-item {
-  position: relative; 
+  position: relative;
 }
 .aa_top_slider_catg {
   font-size: 25px;
@@ -1122,7 +1125,7 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   width: 100px;
   height: 8px;
 
- background-color: rgb(201, 200, 200); 
+  background-color: rgb(201, 200, 200);
   border: 0.5px solid #d1e1ee;
   margin: 0 10px;
 }
@@ -1131,7 +1134,7 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   appearance: none;
   width: 10px;
   height: 10px;
-  background-color: rgb(89, 171, 227); 
+  background-color: rgb(89, 171, 227);
   cursor: pointer;
   border-radius: 50%;
 }
