@@ -24,7 +24,8 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
+             
+             
               Twitter
             </a>
           </li>
