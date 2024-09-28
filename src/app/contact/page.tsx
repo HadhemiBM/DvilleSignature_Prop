@@ -32,8 +32,7 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <div className={styles.blackDiv}></div>
-      <div className={styles.container}>
+      <div className={styles.blackDiv}>
         <div className={styles.contactInfo}>
           <div>
             <h2>Let's Talk</h2>
@@ -50,29 +49,6 @@ const Contact: React.FC = () => {
           <div className={styles.socials}>
             <h5 className={styles.Social}>Socials:</h5>
 
-            {/* <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Instagram
-            </a> */}
-            {/* <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.instafbtwt}
-            >
-              Instagram
-            </a> */}
-            {/* <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.instafbtwt}
-            >
-              Twitter
-            </a> */}
             <a
               href="https://www.twitter.com"
               target="_blank"
@@ -89,14 +65,7 @@ const Contact: React.FC = () => {
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            {/* <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.instafbtwt}
-            >
-              Facebook
-            </a> */}
+
             <a
               className={styles.instafbtwt}
               href="https://www.facebook.com"
@@ -107,7 +76,8 @@ const Contact: React.FC = () => {
             </a>
           </div>
         </div>
-
+      </div>
+      <div className={styles.container}>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
             type="text"
