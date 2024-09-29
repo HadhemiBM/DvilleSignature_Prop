@@ -66,7 +66,7 @@ const Gallery: React.FC = () => {
         <span>Garage</span>
       </div>
       <div className={styles.gallery}>
-  {[...Array(6)].map((_, i) => (
+  {[...Array(12)].map((_, i) => (
     <div className={styles.galleryItem} key={i}>
       <Image src={I_370} alt={`Gallery Image ${i + 1}`} />
     </div>
