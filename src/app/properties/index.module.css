@@ -1,0 +1,219 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-direction: column;
+  margin-top: 40px;
+  align-self: center;
+  font-family: Poppins, sans-serif;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+}
+.blackDiv {
+  width: 100%;
+  height: 140px;
+  background-image: linear-gradient(
+      rgba(108, 107, 107, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../../img/gallery/low2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.Search {
+  width: 80%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin-bottom: 100px;
+}
+.SearchInput {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.SearchBtn {
+  width: 5%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+
+  color: black;
+  font-weight: bold;
+}
+.blogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+
+  align-self: center;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  align-self: center;
+  width: 70%;
+}
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  /* background-color: rgb(73, 21, 21); */
+  height: 500px;
+
+  align-self: flex-start;
+  width: 25%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.card_body {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardStatus {
+  display: flex;
+  color: white;
+  left: 8px;
+  background-color: #59abe3;
+  width: 30%;
+  height: 30px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+
+  padding: 4px 4px 4px 4px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+}
+.cardStatusP {
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 0px 0px 0px;
+}
+.fa_comment_o:before {
+  content: "\f0e5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+.fa_role_o:before {
+  content: "\f21b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+.categories {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.categories h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.categoryList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tags {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.tags h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tagList span {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tagList span:hover {
+  background-color: #59abe3;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pageButton {
+  padding: 8px 10px;
+  margin: 0 0px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pageButton:hover {
+  background-color: #eee;
+}
+
+.activePage {
+  padding: 8px 10px;
+  margin: 0 2px;
+  border: 1px solid #ccc;
+  background-color: #59abe3;
+  color: #fff;
+}
