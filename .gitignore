@@ -12,7 +12,7 @@
 /src/html
 # testing
 /coverage
-/src/app/sigin
+
 /src/app/signup
 
 # next.js
