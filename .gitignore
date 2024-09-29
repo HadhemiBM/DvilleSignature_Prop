@@ -6,7 +6,7 @@
 .pnp.js
 .yarn/install-state.gz
 # /src/css
-/src/fonts
+# /src/fonts
 /src/js
 /src/scss
 /src/html
