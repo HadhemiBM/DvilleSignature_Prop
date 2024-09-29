@@ -1,14 +1,20 @@
 import React from "react";
 import styles from "./index.module.css"; // Assuming the CSS file is in the same directory
 
-const LoginForm: React.FC = () => {
+const SignupForm: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <form className={styles.form}>
-          <h2 className={styles.h2}>Login</h2>
+          <h2 className={styles.h2}>Sign Up</h2>
+          <div className={styles.inputField}>
+            <input type="text" required placeholder="Enter your username" />
+          </div>
           <div className={styles.inputField}>
             <input type="email" required placeholder="Enter your email" />
+          </div>
+          <div className={styles.inputField}>
+            <input type="password" required placeholder="Enter your password" />
           </div>
           <div className={styles.inputField}>
             <input
@@ -17,19 +23,12 @@ const LoginForm: React.FC = () => {
               placeholder="Confirm your password"
             />
           </div>
-          <div className={styles.forget}>
-            <label htmlFor="remember">
-              <input type="checkbox" id="remember" />
-              <p>Remember me</p>
-            </label>
-            <a href="#">Forgot password?</a>
-          </div>
           <button className={styles.button} type="submit">
-            Log In
+            Sign Up
           </button>
           <div className={styles.register}>
             <p>
-              Don't have an account? <a href="/signup">Register</a>
+              Already have an account? <a href="/signin">Login</a>
             </p>
           </div>
         </form>
@@ -38,4 +37,4 @@ const LoginForm: React.FC = () => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;

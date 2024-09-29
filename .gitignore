@@ -13,7 +13,7 @@
 # testing
 /coverage
 
-/src/app/signup
+# /src/app/signup
 
 # next.js
 /.next/
