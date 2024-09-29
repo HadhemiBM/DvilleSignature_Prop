@@ -13,14 +13,7 @@ import NewsSection from "./components/NewsSection";
 // import Search from "./components/Search";
 
 export default function Home() {
-  const pathname = usePathname();
 
-  const links = [
-    { id: 1, link: "/", name: "Accueil" },
-    { id: 2, link: "/sigin", name: "About" },
-    { id: 3, link: "#services", name: "Services" },
-    { id: 4, link: "#contact", name: "Contact" },
-  ];
 
   return (
     <div className={styles.Page}>
