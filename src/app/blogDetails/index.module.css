@@ -8,6 +8,7 @@
   font-family: Poppins, sans-serif;
   background-color: rgb(255, 255, 255);
   width: 90%;
+  height: auto;
 }
 .blackDiv {
   width: 100%;
@@ -19,6 +20,13 @@
     url("../../img/gallery/GalleryBanner.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+.listGroupItem h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  color: #59abe3;
 }
 .Search {
   width: 80%;
@@ -68,7 +76,7 @@
 .Gallery {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   align-content: center;
   background-color: rgb(255, 255, 255);
@@ -94,37 +102,65 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
   align-content: center;
-  gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  padding: 20px;
+
+  /* background-color: #59abe3; */
+}
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  border: 1px solid #e5e5e5;
+}
+.comments {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  border: 1px solid #e5e5e5;
+}
+.card_img_top {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
 }
 .card_body {
+  padding: 20px;
+
   display: flex;
   flex-direction: row;
-  padding: 8px;
+
   align-items: center;
   justify-content: space-between;
 }
 .cardStatus {
   display: flex;
-  color: white;
-  left: 8px;
-  background-color: #59abe3;
+  color: rgb(251, 241, 241);
+  top: 5px;
+  background-color: #f5f6f7;
   width: 30%;
   height: 30px;
-  top: 20px;
+
   font-family: "Poppins", sans-serif;
 
   padding: 4px 4px 4px 4px;
   align-items: center;
   align-content: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
 }
 .cardStatusP {
   text-align: center;
   font-size: 14px;
   padding: 0px 0px 0px 0px;
+  color: black;
 }
 .fa_comment_o:before {
   content: "\f0e5";
@@ -216,4 +252,17 @@
   border: 1px solid #ccc;
   background-color: #59abe3;
   color: #fff;
+}
+.verticalLine {
+  height: 50px;
+  width: 2px;
+  background-color: #1976b4;
+  margin: 0 4px;
+}
+.card_footer {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 8px;
 }

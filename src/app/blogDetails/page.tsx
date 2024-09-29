@@ -2,14 +2,10 @@
 
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import I_360 from "../../img/gallery/360_240.jpg";
+import I_920 from "../../img/gallery/1920_1280.jpg";
 import Image from "next/image";
-import Link from "next/link";
 
-const Blog: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 8;
-
+const blogDetails: React.FC = () => {
   const blogPosts = [
     {
       id: 1,
@@ -19,53 +15,8 @@ const Blog: React.FC = () => {
       role: "Admin",
       comments: 6,
     },
-    {
-      id: 2,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "User",
-      comments: 6,
-    },
-    {
-      id: 3,
-      title: "title.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
-    {
-      id: 4,
-      title: "titre.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
-    {
-      id: 5,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "User",
-      comments: 6,
-    },
-    {
-      id: 6,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
   ];
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
-
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
     <>
       <div className={styles.blackDiv}></div>
@@ -84,23 +35,20 @@ const Blog: React.FC = () => {
         <div className={styles.blogs}>
           <div className={styles.Gallery}>
             <div className={styles.cards}>
-              {currentPosts.map((post) => (
-                <div key={post.id} className="card">
+              {blogPosts.map((post) => (
+                <div key={post.id} className={styles.card}>
                   <div className={styles.cardStatus}>
                     <p className={styles.cardStatusP}>{post.date}</p>
                   </div>
                   <Image
-                    className="card-img-top"
-                    src={I_360}
+                    className={styles.card_img_top}
+                    src={I_920}
                     alt="Card image cap"
                   />
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item">
-                      <Link href="/blogDetails">
-                        <h3>{post.title}</h3>
-                      </Link>
+                    <li className={styles.listGroupItem}>
+                      <h2>{post.title}</h2>
                     </li>
-                    <li className="list-group-item">{post.description}</li>
                   </ul>
                   <div className={styles.card_body}>
                     <p className="card-Role">
@@ -110,28 +58,23 @@ const Blog: React.FC = () => {
                       <i className="fa-solid fa-comment"></i> {post.comments}
                     </p>
                   </div>
+                  <li className="list-group-item">{post.description}</li>
+                  <div className={styles.card_footer}>
+                    <span className={styles.verticalLine}></span>
+                    <p>Owner.</p>
+                  </div>
                 </div>
               ))}
             </div>
+            <div 
+              className={styles.comments}
+            >
 
-            <div className={styles.pagination}>
-              {[
-                ...Array(Math.ceil(blogPosts.length / postsPerPage)).keys(),
-              ].map((number) => (
-                <button
-                  key={number + 1}
-                  onClick={() => paginate(number + 1)}
-                  className={
-                    number + 1 === currentPage
-                      ? styles.activePage
-                      : styles.pageButton
-                  }
-                >
-                  {number + 1}
-                </button>
-              ))}
+              
+
             </div>
           </div>
+
 
           <div className={styles.choices}>
             <div className={styles.categories}>
@@ -198,4 +141,4 @@ const Blog: React.FC = () => {
   );
 };
 
-export default Blog;
+export default blogDetails;
