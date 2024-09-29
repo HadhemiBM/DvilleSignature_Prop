@@ -1,0 +1,15 @@
+/* Same styles as before with minor changes for new fields */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  /* background-image: url("../img/gallery/homeBG.webp"); */
+  width: 100%;
+}
+

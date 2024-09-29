@@ -16,8 +16,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Header: React.FC = () => {
-  const [nav, setNav] = useState<boolean>(false);
-  const pathname = usePathname();
+
 
   const [areaFrom, setAreaFrom] = useState(200);
   const [areaTo, setAreaTo] = useState(700);

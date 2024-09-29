@@ -10,19 +10,17 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import PropertiesSection from "./components/PropertiesSection";
 import NewsSection from "./components/NewsSection";
+import Acceuil from "./Acceuil/page";
+
 // import Search from "./components/Search";
 
 export default function Home() {
-
-
   return (
     <div className={styles.Page}>
-      <Header />
-      <AboutSection />
-      <PropertiesSection />
-      <NewsSection />
+      
+      <Acceuil />
     </div>
 
-    // </div>
+   
   );
 }

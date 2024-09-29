@@ -11,10 +11,10 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const links = [
-    { id: 1, link: "/", name: "HOME" },
-    { id: 2, link: "/properties", name: "PROPERTIES" },
-    { id: 3, link: "/gallery", name: "GALLERY" },
-    { id: 4, link: "/blog", name: "BLOG" },
+    { id: 1, link: "/", name: "ACCEUIL" },
+    { id: 2, link: "./properties", name: "PROPERTIES" },
+    { id: 3, link: "./gallery", name: "GALLERY" },
+    { id: 4, link: "./blog", name: "BLOG" },
     { id: 5, link: "/contact", name: "CONTACT" },
   ];
   useEffect(() => {
