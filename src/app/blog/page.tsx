@@ -3,166 +3,245 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 import tt from "../../img/gallery/woman.jpg";
+import I_360 from "../../img/gallery/360_240.jpg";
+import Image from "next/image";
+
 const Blog: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    service: "",
-    budget: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission logic
-    console.log("Form Data:", formData);
-  };
-
   return (
     <>
       <div className={styles.blackDiv}></div>
       <div className={styles.container}>
-        <div className={styles.contactInfo}>
-          <div>
-            <h2>Let's Talk</h2>
-            <p className={styles.ltesdes}>
-              Looking for a luxury property or want to discuss a real estate
-              project? <br />
-              Get in touch, and we'd be happy to assist you.
-            </p>
-          </div>
-          <div className={styles.Emaill}>
-            <h5 className={styles.Email}>Email : </h5>
-            <p>deville.signature@gmail.com</p>
-          </div>
-          <div className={styles.socials}>
-            <h5 className={styles.Social}>Socials:</h5>
-
-            {/* <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Instagram
-            </a> */}
-            {/* <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.instafbtwt}
-            >
-              Instagram
-            </a> */}
-            {/* <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.instafbtwt}
-            >
-              Twitter
-            </a> */}
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.instafbtwt}
-            >
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a
-              href="https://www.Linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.instafbtwt}
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-            {/* <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.instafbtwt}
-            >
-              Facebook
-            </a> */}
-            <a
-              className={styles.instafbtwt}
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-          </div>
-        </div>
-
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <div className={styles.Search}>
           <input
             type="text"
-            name="name"
-            placeholder="Name"
-            value={formData.name}
-            onChange={handleChange}
-            className={styles.input}
+            placeholder="Search"
+            className={styles.SearchInput}
           />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            className={styles.input}
-          />
-          <select
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            className={styles.select}
-          >
-            <option value="" disabled>
-              Select project type
-            </option>
-
-            <option value="Property Purchase">Property Purchase</option>
-            <option value="Property Sale">Property Sale</option>
-            <option value="Rental Inquiry">Rental Inquiry</option>
-          </select>
-          <select
-            name="budget"
-            value={formData.budget}
-            onChange={handleChange}
-            className={styles.select}
-          >
-            <option value="" disabled>
-              Select budget range
-            </option>
-            <option value="<$500,000">Less than $500,000</option>
-            <option value="$500,000 - $1,000,000">$500,000 - $1,000,000</option>
-            <option value=">$1,000,000">More than $1,000,000</option>
-          </select>
-          <textarea
-            name="message"
-            placeholder="Message"
-            value={formData.message}
-            onChange={handleChange}
-            className={styles.textarea}
-          />
-          <button type="submit" className={styles.submitButton}>
-            Submit
+          <button className={styles.SearchBtn}>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </button>
-        </form>
+        </div>
+
+        <div className={styles.blogs}>
+          <div className={styles.Gallery}>
+            <div className={styles.cards}>
+              <div className="card">
+                <div className={styles.cardStatus}>
+                  <p className={styles.cardStatusP}>28 Aout, 2024</p>
+                </div>
+                <Image
+                  className="card-img-top"
+                  src={I_360}
+                  alt="Card image cap"
+                />
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <h3>nom.</h3>
+                  </li>
+                  <li className="list-group-item">description.</li>
+                </ul>
+                <div className={styles.card_body}>
+                  <p className="card-Role">
+                    <span className={styles.fa_role_o}></span> Admin
+                  </p>
+                  <p className="card-comment">
+                    <i className="fa-solid fa-comment"></i> 6
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className={styles.cardStatus}>
+                  <p className={styles.cardStatusP}>28 Aout, 2024</p>
+                </div>
+                <Image
+                  className="card-img-top"
+                  src={I_360}
+                  alt="Card image cap"
+                />
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <h3>nom.</h3>
+                  </li>
+                  <li className="list-group-item">description.</li>
+                </ul>
+                <div className={styles.card_body}>
+                  <p className="card-Role">
+                    {/* <span className={styles.fa_role_o}></span> Admin */}
+                    <i className="fa-solid fa-user"></i> User
+                  </p>
+                  <p className="card-comment">
+                    <i className="fa-solid fa-comment"></i> 6
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className={styles.cardStatus}>
+                  <p className={styles.cardStatusP}>28 Aout, 2024</p>
+                </div>
+                <Image
+                  className="card-img-top"
+                  src={I_360}
+                  alt="Card image cap"
+                />
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <h3>nom.</h3>
+                  </li>
+                  <li className="list-group-item">description.</li>
+                </ul>
+                <div className={styles.card_body}>
+                  <p className="card-Role">
+                    <span className={styles.fa_role_o}></span> Admin
+                  </p>
+                  <p className="card-comment">
+                    <i className="fa-solid fa-comment"></i> 6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.cards}>
+              <div className="card">
+                <div className={styles.cardStatus}>
+                  <p className={styles.cardStatusP}>28 Aout, 2024</p>
+                </div>
+                <Image
+                  className="card-img-top"
+                  src={I_360}
+                  alt="Card image cap"
+                />
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <h3>nom.</h3>
+                  </li>
+                  <li className="list-group-item">description.</li>
+                </ul>
+                <div className={styles.card_body}>
+                  <p className="card-Role">
+                    <span className={styles.fa_role_o}></span> Admin
+                  </p>
+                  <p className="card-comment">
+                    <i className="fa-solid fa-comment"></i> 6
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className={styles.cardStatus}>
+                  <p className={styles.cardStatusP}>28 Aout, 2024</p>
+                </div>
+                <Image
+                  className="card-img-top"
+                  src={I_360}
+                  alt="Card image cap"
+                />
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <h3>nom.</h3>
+                  </li>
+                  <li className="list-group-item">description.</li>
+                </ul>
+                <div className={styles.card_body}>
+                  <p className="card-Role">
+                    {/* <span className={styles.fa_role_o}></span> Admin */}
+                    <i className="fa-solid fa-user"></i> User
+                  </p>
+                  <p className="card-comment">
+                    <i className="fa-solid fa-comment"></i> 6
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className={styles.cardStatus}>
+                  <p className={styles.cardStatusP}>28 Aout, 2024</p>
+                </div>
+                <Image
+                  className="card-img-top"
+                  src={I_360}
+                  alt="Card image cap"
+                />
+
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <h3>nom.</h3>
+                  </li>
+                  <li className="list-group-item">description.</li>
+                </ul>
+                <div className={styles.card_body}>
+                  <p className="card-Role">
+                    <span className={styles.fa_role_o}></span> Admin
+                  </p>
+                  <p className="card-comment">
+                    <i className="fa-solid fa-comment"></i> 6
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.choices}>
+            <div className={styles.categories}>
+              <h3>Categories</h3>
+              <ul className={styles.categoryList}>
+                <li>
+                  <span>Properties</span>
+                  <span>1500</span>
+                </li>
+                <li>
+                  <span>Apartment</span>
+                  <span>5000</span>
+                </li>
+                <li>
+                  <span>Office</span>
+                  <span>3000</span>
+                </li>
+                <li>
+                  <span>Residential</span>
+                  <span>4500</span>
+                </li>
+                <li>
+                  <span>Commercial</span>
+                  <span>1000</span>
+                </li>
+                <ul>
+                  <li>
+                    <span>Category 2.1</span>
+                    <span>50</span>
+                  </li>
+                  <li>
+                    <span>Category 2.2</span>
+                    <span>100</span>
+                  </li>
+                </ul>
+                <li>
+                  <span>Villa</span>
+                  <span>800</span>
+                </li>
+                <li>
+                  <span>Bungalow</span>
+                  <span>200</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.tags}>
+              <h3>Tags</h3>
+              <div className={styles.tagList}>
+                <span>Apartment</span>
+                <span>Property</span>
+                <span>Residential</span>
+                <span>Commercial</span>
+                <span>Office</span>
+                <span>Rent</span>
+                <span>Sale</span>
+                <span>Villa</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
