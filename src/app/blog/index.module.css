@@ -191,3 +191,29 @@
 .tagList span:hover {
   background-color: #59abe3;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pageButton {
+  padding: 8px 10px;
+  margin: 0 0px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pageButton:hover {
+  background-color: #eee;
+}
+
+.activePage {
+  padding: 8px 10px;
+  margin: 0 2px;
+  border: 1px solid #ccc;
+  background-color: #59abe3;
+  color: #fff;
+}
