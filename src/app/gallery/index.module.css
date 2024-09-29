@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-direction: column;
+  margin-top: 40px;
+  align-self: center;
+  font-family: Poppins, sans-serif;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+}
+
+.blackDiv {
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(rgba(108, 107, 107, 0.7), rgba(0, 0, 0, 1)),
+    url("../../img/gallery/low2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutUSTitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  color: #59abe3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.GalleryDescription {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  line-height: 2.4rem;
+  unicode-bidi: isolate;
+  margin-top: 20px;
+}
+
+.AboutUS {
+  width: 90%;
+  background-color: #ffffff;
+  align-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutUSTitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  color: #59abe3;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.titleDecoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  width: 90px;
+  height: 2px;
+  background-color: #59abe3;
+}
+
+.verticalLine {
+  height: 12px;
+  width: 2px;
+  background-color: #59abe3;
+  margin: 0 4px;
+}
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.tagList span {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #898989;
+
+  cursor: pointer;
+}
+
+.tagList span:hover {
+  background-color: #b2d0e5;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 70%;
+  align-self: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.galleryItem {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: auto;
+}
