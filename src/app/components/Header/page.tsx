@@ -195,7 +195,7 @@ const Header: React.FC = () => {
         className="carousel carousel-dark slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel-indicators">
+        {/* <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
@@ -216,7 +216,7 @@ const Header: React.FC = () => {
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
-        </div>
+        </div> */}
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="4000">
             <Image
@@ -294,7 +294,7 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        <button
+        {/* <button
           className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleDark"
@@ -317,7 +317,7 @@ const Header: React.FC = () => {
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Next</span>
-        </button>
+        </button> */}
       </div>
 
       <div className={styles.SearchSection}>
