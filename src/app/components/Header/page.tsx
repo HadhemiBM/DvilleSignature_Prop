@@ -1,9 +1,8 @@
+"use client";
 
-import Link from "next/link";
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
+
 import styles from "./index.module.css";
-import Navbar from "../Navbar";
 
 import one from "../../../img/gallery/homeBG.webp";
 import two from "../../../img/gallery/5.jpg";
@@ -15,8 +14,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Header: React.FC = () => {
-
-
   const [areaFrom, setAreaFrom] = useState(200);
   const [areaTo, setAreaTo] = useState(700);
   const [priceFrom, setPriceFrom] = useState(200);

@@ -1,10 +1,10 @@
 // export default Search;
-import React, { useState } from "react";
+import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import AboutImg from "../../../img/gallery/AboutImage.jpg";
+
 import I_360 from "../../../img/gallery/360_240.jpg";
 const NewsSection: React.FC = () => {
   return (
