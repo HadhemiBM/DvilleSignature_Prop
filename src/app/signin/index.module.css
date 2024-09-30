@@ -16,7 +16,7 @@
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(68, 68, 68, 0.7)),
-    url("../../img/gallery/signin.jpg");
+    url("https://res.cloudinary.com/dy5gov7fj/image/upload/v1727661426/signin_dtjtqf.jpg");
 }
 
 .wrapper {
