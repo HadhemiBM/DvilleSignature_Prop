@@ -10,7 +10,7 @@ import three from "../../../img/gallery/3.jpg";
 
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Header: React.FC = () => {
