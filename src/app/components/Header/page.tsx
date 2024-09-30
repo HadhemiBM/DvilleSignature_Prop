@@ -48,10 +48,10 @@ const Header: React.FC = () => {
                   </div>
                   <div className="col-md-6 col-sm-6 col-xs-6">
                     <div className={styles.aa_header_right}>
-                      <a href="/signup" className={styles.aa_register}>
+                      <a href="./signup" className={styles.aa_register}>
                         Register
                       </a>
-                      <a href="/signin" className={styles.aa_login}>
+                      <a href="./signin" className={styles.aa_login}>
                         Login
                       </a>
                     </div>

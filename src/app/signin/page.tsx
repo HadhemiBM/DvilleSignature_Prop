@@ -29,7 +29,7 @@ const LoginForm: React.FC = () => {
           </button>
           <div className={styles.register}>
             <p>
-              Don't have an account? <a href="/signup">Register</a>
+              Don't have an account? <a href="./signup">Register</a>
             </p>
           </div>
         </form>

@@ -28,7 +28,7 @@ const SignupForm: React.FC = () => {
           </button>
           <div className={styles.register}>
             <p>
-              Already have an account? <a href="/signin">Login</a>
+              Already have an account? <a href="./signin">Login</a>
             </p>
           </div>
         </form>
