@@ -1,23 +1,30 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import styles from "./index.module.css";
 
-import one from "../../../img/gallery/homeBG.webp";
-import two from "../../../img/gallery/5.jpg";
-import three from "../../../img/gallery/3.jpg";
-
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import "@fortawesome/fontawesome-free/css/all.min.css";
+if (typeof window !== "undefined") {
+  require("bootstrap/dist/js/bootstrap.bundle.min.js");
+}
 
 const Header: React.FC = () => {
+  const carouselRef = useRef(null);
   const [areaFrom, setAreaFrom] = useState(200);
   const [areaTo, setAreaTo] = useState(700);
   const [priceFrom, setPriceFrom] = useState(200);
   const [priceTo, setPriceTo] = useState(700);
+
+  const one =
+    "https://res.cloudinary.com/dy5gov7fj/image/upload/v1727660139/5_tgb38q.jpg";
+  const two =
+    "https://res.cloudinary.com/dy5gov7fj/image/upload/v1727660193/homeBG_iccqsj.webp";
+  const three =
+    "https://res.cloudinary.com/dy5gov7fj/image/upload/v1727660197/3_kgxvmd.jpg";
 
   return (
     <div className={styles.container1}>
@@ -57,7 +64,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Carousel section */}
-      <div
+      {/* <div
         id="carouselExampleDark"
         className="carousel carousel-dark slide"
         data-bs-ride="carousel"
@@ -133,7 +140,7 @@ const Header: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-bs-interval="2000">
             <Image
               width={1920}
               height={700}
@@ -182,8 +189,137 @@ const Header: React.FC = () => {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
+      </div> */}
+      <div
+        id="carouselExampleDark"
+        className="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active" data-bs-interval="4000">
+            <Image
+              width={1000}
+              height={700}
+              alt="Slide 1"
+              src={two}
+              className="d-block w-100"
+            />
+            <div className={styles.ProductInfo}>
+              <span className={styles.aa_top_slider_catg}>Duplex</span>
+              <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
+              <p className={styles.aa_top_slider_location}>
+                <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
+              </p>
+              <span className={styles.aa_top_slider_off}>30% OFF</span>
+              <p className={styles.aa_top_slider_price}>$460,000</p>
+              <a href="#" className={styles.aa_top_slider_btn}>
+                Read More
+                <span
+                  className={`${styles.fa} ${styles.fa_angle_double_right}`}
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <div className="carousel-item" data-bs-interval="4000">
+            <Image
+              width={1920}
+              height={700}
+              alt="Slide 2"
+              src={one}
+              className="d-block w-100"
+            />
+            <div className={styles.ProductInfo}>
+              <span className={styles.aa_top_slider_catg}>Duplex</span>
+              <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
+              <p className={styles.aa_top_slider_location}>
+                <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
+              </p>
+              <span className={styles.aa_top_slider_off}>30% OFF</span>
+              <p className={styles.aa_top_slider_price}>$460,000</p>
+              <a href="#" className={styles.aa_top_slider_btn}>
+                Read More
+                <span
+                  className={`${styles.fa} ${styles.fa_angle_double_right}`}
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <div className="carousel-item" data-bs-interval="4000">
+            <Image
+              width={1920}
+              height={700}
+              alt="Slide 3"
+              src={three}
+              className="d-block w-100"
+            />
+            <div className={styles.ProductInfo}>
+              <span className={styles.aa_top_slider_catg}>Duplex</span>
+              <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
+              <p className={styles.aa_top_slider_location}>
+                <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
+              </p>
+              <span className={styles.aa_top_slider_off}>30% OFF</span>
+              <p className={styles.aa_top_slider_price}>$460,000</p>
+              <a href="#" className={styles.aa_top_slider_btn}>
+                Read More
+                <span
+                  className={`${styles.fa} ${styles.fa_angle_double_right}`}
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-      {/* SEARCH */}
+
       <div className={styles.SearchSection}>
         <div className={styles.bodyy}>
           <div className={styles.search_container}>
@@ -212,7 +348,6 @@ const Header: React.FC = () => {
           </div>
 
           <div className={styles.range_container}>
-            {/* Area Slider */}
             <div className={styles.range_slider}>
               <label>AREA (SQ)</label>
               <div className={styles.range}>
@@ -239,7 +374,6 @@ const Header: React.FC = () => {
               </div>
             </div>
 
-            {/* Price Slider */}
             <div className={styles.range_slider}>
               <label>PRICE ($)</label>
               <div className={styles.range}>

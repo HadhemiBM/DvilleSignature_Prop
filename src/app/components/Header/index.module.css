@@ -1056,7 +1056,6 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   justify-content: space-between;
   align-items: center;
 
-
   margin-bottom: 10px;
   width: 100%;
   padding: 10px;
@@ -1137,4 +1136,33 @@ fieldset[disabled] .navbar_default .btn-link:focus {
   background-color: rgb(89, 171, 227);
   cursor: pointer;
   border-radius: 50%;
+}
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselControl {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carouselControl:first-of-type {
+  left: 10px;
+}
+
+.carouselControl:last-of-type {
+  right: 10px;
 }
