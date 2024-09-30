@@ -1,26 +1,12 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "./index.module.css";
 import "./globals.css";
-import Header from "./components/Header/page";
-import Navbar from "./components/Navbar";
-import AboutSection from "./components/AboutSection";
-import PropertiesSection from "./components/PropertiesSection";
-import NewsSection from "./components/NewsSection";
-import Acceuil from "./Acceuil/page";
 
-// import Search from "./components/Search";
+import Acceuil from "./Acceuil/page";
 
 export default function Home() {
   return (
     <div className={styles.Page}>
-      
       <Acceuil />
     </div>
-
-   
   );
 }

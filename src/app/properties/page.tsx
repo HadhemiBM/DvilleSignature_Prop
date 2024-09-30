@@ -2,9 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import I_370 from "../../img/gallery/370_220.jpg";
-import Image from "next/image";
-import Link from "next/link";
+
 
 const Properties: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
