@@ -332,6 +332,8 @@ const Header: React.FC = () => {
               <option>Category</option>
               <option>House</option>
               <option>Apartment</option>
+              <option>Villa</option>
+              <option>Office</option>
             </select>
             <select className={styles.dropdown}>
               <option>Rooms</option>

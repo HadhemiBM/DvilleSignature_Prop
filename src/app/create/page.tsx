@@ -12,6 +12,9 @@ const PostPropertyForm = () => {
         >
           <div className={styles.formbold_input_flex}>
             <div className={styles.formbold_form_input1}>
+              <label htmlFor="Title" className={styles.formbold_form_label}>
+                Title
+              </label>
               <input
                 type="text"
                 name="Title"
@@ -20,14 +23,14 @@ const PostPropertyForm = () => {
                 className={styles.formbold_form_input}
                 required
               />
-              <label htmlFor="Title" className={styles.formbold_form_label}>
-                Title
-              </label>
             </div>
           </div>
 
           <div className={styles.formbold_input_flex}>
             <div>
+              <label htmlFor="Type" className={styles.formbold_form_label}>
+                Type
+              </label>
               <input
                 type="text"
                 name="Type"
@@ -36,11 +39,11 @@ const PostPropertyForm = () => {
                 className={styles.formbold_form_input}
                 required
               />
-              <label htmlFor="Type" className={styles.formbold_form_label}>
-                Type
-              </label>
             </div>
             <div>
+              <label htmlFor="Category" className={styles.formbold_form_label}>
+                Category
+              </label>
               <input
                 type="text"
                 name="Category"
@@ -49,14 +52,14 @@ const PostPropertyForm = () => {
                 className={styles.formbold_form_input}
                 required
               />
-              <label htmlFor="Category" className={styles.formbold_form_label}>
-                Category
-              </label>
             </div>
           </div>
 
           <div className={styles.formbold_input_flex}>
             <div>
+              <label htmlFor="Location" className={styles.formbold_form_label}>
+                Location
+              </label>
               <input
                 type="text"
                 name="Location"
@@ -65,11 +68,11 @@ const PostPropertyForm = () => {
                 className={styles.formbold_form_input}
                 required
               />
-              <label htmlFor="Location" className={styles.formbold_form_label}>
-                Location
-              </label>
             </div>
             <div>
+              <label htmlFor="Price" className={styles.formbold_form_label}>
+                Price
+              </label>
               <input
                 type="text"
                 name="Price"
@@ -78,24 +81,21 @@ const PostPropertyForm = () => {
                 className={styles.formbold_form_input}
                 required
               />
-              <label htmlFor="Price" className={styles.formbold_form_label}>
-                Price
-              </label>
             </div>
           </div>
 
           <div className={styles.formbold_textarea}>
+            <label htmlFor="Description" className={styles.formbold_form_label}>
+              Description
+            </label>
             <textarea
-              rows={6}
+              rows={4}
               name="Description"
               id="Description"
               placeholder="Write your Description..."
               className={styles.formbold_form_input}
               required
             ></textarea>
-            <label htmlFor="Description" className={styles.formbold_form_label}>
-              Description
-            </label>
           </div>
 
           <div className={styles.formbold_input_file}>

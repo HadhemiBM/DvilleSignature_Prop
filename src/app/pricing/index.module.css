@@ -1,5 +1,7 @@
 .container {
   width: 100%;
+  display: flex;
+
   margin: 0 auto;
   padding: 0 2rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(68, 68, 68, 0.7)),
@@ -10,34 +12,31 @@
   color: white;
   font-family: Poppins, sans-serif;
   font-size: 16px;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2%;
+  width: 60%;
+  flex-direction: row;
+
   padding: 12% 0;
+  align-self: center;
+  align-items: center;
+  align-content: center;
 }
 
-/* .card {
-  flex: 0 1 calc(40% - 7%);
-  padding: 50px;
-  background: rgba(255, 255, 255, 0.032);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-
-  backdrop-filter: blur(8px);
-  border-radius: 25px;
-  box-sizing: border-box;
-  -webkit-backdrop-filter: blur(8px);
-
-  margin-bottom: 40px;
-} */
 .card {
   display: flex;
   flex-direction: column;
-  /* align-items: center;  */
-  flex: 0 1 calc(35% - 1%);
+  align-items: center;
+
+  flex: 0 1 calc(30% -1%);
   padding: 50px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -45,6 +44,7 @@
   border-radius: 25px;
   box-sizing: border-box;
   margin-bottom: 40px;
+  max-width: 45rem;
 }
 .card_title {
   font-weight: normal;
@@ -57,7 +57,7 @@
 .pricing {
   font-weight: normal;
   font-size: 96px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .pricing .small {
@@ -85,6 +85,9 @@
   border-radius: 29px;
   padding: 20px 0;
   color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255);
+  border-left: 1px solid rgba(255, 255, 255);
+
   text-decoration: none;
   letter-spacing: 2px;
   transition: background 0.3s ease;
