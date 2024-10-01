@@ -1,0 +1,95 @@
+.formbold_main_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    /* url("https://res.cloudinary.com/dy5gov7fj/image/upload/v1727661426/signin_dtjtqf.jpg"); */
+      url("../../img/gallery/low2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formbold_form_wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 33%;
+
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.formbold_input_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.formbold_form_input1 {
+  width: 100%;
+}
+.formbold_form_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.formbold_form_input:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+.formbold_form_label {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.formbold_textarea {
+  margin-bottom: 20px;
+}
+
+.formbold_input_file {
+  margin-bottom: 20px;
+}
+
+.formbold_input_label {
+  display: flex;
+  align-items: center;
+  /* background: #767373; */
+  border: 1px dashed #000000;
+  padding: 10px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.formbold_btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formbold_btn:hover {
+  background: #000000;
+}
+.formbold_input_file_input {
+  display: none;
+  opacity: 00;
+}

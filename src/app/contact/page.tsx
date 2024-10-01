@@ -78,7 +78,13 @@ const Contact: React.FC = () => {
         </div>
       </div>
       <div className={styles.container}>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form
+          className={styles.form}
+          action="https://formbold.com/s/92pyY"
+          method="POST"
+          encType="multipart/form-data"
+          // onSubmit={handleSubmit}
+        >
           <input
             type="text"
             name="name"

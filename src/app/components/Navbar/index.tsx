@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     { id: 1, link: "/", name: "HOME" },
     { id: 2, link: "./properties", name: "PROPERTIES" },
     { id: 3, link: "./gallery", name: "GALLERY" },
-    // { id: 4, link: "./blog", name: "BLOG" },
+    { id: 4, link: "./create", name: "Prod" },
     { id: 4, link: "./pricing", name: "PRICING" },
     { id: 5, link: "/contact", name: "CONTACT" },
   ];
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.navbarContainer}>
-        <a href="/" className={styles.navbarLogoText}>
+        <a href="/home" className={styles.navbarLogoText}>
           Deville Signature
           <span className={styles.navbarLogoTextSpan}> Properties</span>
         </a>
