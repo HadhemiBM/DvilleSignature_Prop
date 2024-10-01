@@ -47,58 +47,7 @@ const pricingData = [
 const Pricing: React.FC = () => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.grid}>
-        <div className={styles.card}>
-          <h2 className={styles.card_title}>Basic Listing</h2>
-          <p className={styles.pricing}>
-            $150<span className={styles.small}>/per month</span>
-          </p>
-          <p>Save $9</p>
-          <hr />
-          <ul className={styles.features}>
-            <li>One account</li>
-            <li>Unlimited songs</li>
-            <li>Customized playlist</li>
-          </ul>
-          <a href="#" className={styles.cta_btn}>
-            Buy Now
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <h2 className={styles.card_title}>Standard Package</h2>
-          <p className={styles.pricing}>
-            $300<span className={styles.small}>/per month</span>
-          </p>
-          <p>Save $15</p>
-          <hr />
-          <ul className={styles.features}>
-            <li>One account</li>
-            <li>Unlimited songs</li>
-            <li>Customized playlist</li>
-          </ul>
-          <a href="#" className={styles.cta_btn}>
-            Buy Now
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <h2 className={styles.card_title}>Premium Package</h2>
-          <p className={styles.pricing}>
-            $500<span className={styles.small}>/per month</span>
-          </p>
-          <p>Save $25</p>
-          <hr />
-          <ul className={styles.features}>
-            <li>Six accounts</li>
-            <li>Unlimited songs</li>
-            <li>Customized playlist</li>
-          </ul>
-          <a href="" className={styles.cta_btn}>
-            Buy Now
-          </a>
-        </div>
-      </div> */}
+    
       <div className={styles.grid}>
         {pricingData.map((plan, index) => (
           <div key={index} className={styles.card}>

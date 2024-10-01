@@ -3,7 +3,8 @@
   margin: 0 auto;
   padding: 0 2rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(68, 68, 68, 0.7)),
-    url("https://res.cloudinary.com/dy5gov7fj/image/upload/v1727661426/signin_dtjtqf.jpg");
+    /* url("https://res.cloudinary.com/dy5gov7fj/image/upload/v1727661426/signin_dtjtqf.jpg"); */
+      url("../../img/gallery/low2.jpeg");
   background-repeat: no-repeat;
   background-size: cover; /* Changed to cover for better responsiveness */
   color: white;
@@ -56,7 +57,7 @@
 .pricing {
   font-weight: normal;
   font-size: 96px;
-  color: #59abe3;
+  color: #000000;
 }
 
 .pricing .small {
@@ -83,7 +84,7 @@
   background: rgba(21, 23, 24, 0.7);
   border-radius: 29px;
   padding: 20px 0;
-  color: #59abe3;
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: 2px;
   transition: background 0.3s ease;
@@ -92,7 +93,8 @@
 }
 
 .cta_btn:hover {
-  background: #000;
+  background: #ffffff;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
   .grid {
