@@ -3,14 +3,17 @@ import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import { list } from "../../data/data.js";
 
 import I_360 from "../../../img/gallery/360_240.jpg";
+import RecentCard from "../RecentCard/RecentCard";
+const NewsPosts = list.slice(3);
+
 const NewsSection: React.FC = () => {
   return (
     <div className={styles.bodyy}>
       <div className={styles.titleContainer}>
-        <h2 className={styles.PropertiesTitle}>Latest News</h2>
+        <h2 className={styles.PropertiesTitle}>Latest Properties</h2>
         <div className={styles.titleDecoration}>
           <span className={styles.line}></span>
           <span className={styles.verticalLine}></span>
@@ -19,9 +22,6 @@ const NewsSection: React.FC = () => {
       </div>
 
       <p className={styles.PropertiesDescription}>
-        Our "Latest News" section is your go-to source for the latest
-        announcements and special offers.
-        <br />
         Here, we share important updates about upcoming property launches,
         exclusive deals, and special events. Be the first to
         <br />
@@ -31,7 +31,7 @@ const NewsSection: React.FC = () => {
         find your dream property or take advantage of our exclusive promotions!
       </p>
       <div className={styles.cards}>
-        <div className="card">
+        {/* <div className="card">
           <div className={styles.cardStatus}>
             <p className={styles.cardStatusP}>28 Aout, 2024</p>
           </div>
@@ -66,7 +66,7 @@ const NewsSection: React.FC = () => {
           </ul>
           <div className={styles.card_body}>
             <p className="card-Role">
-              {/* <span className={styles.fa_role_o}></span> Admin */}
+              {/* <span className={styles.fa_role_o}></span> Admin 
               <i className="fa-solid fa-user"></i> User
             </p>
             <p className="card-comment">
@@ -94,7 +94,8 @@ const NewsSection: React.FC = () => {
               <i className="fa-solid fa-comment"></i> 6
             </p>
           </div>
-        </div>
+        </div> */}
+        <RecentCard posts={NewsPosts} />
       </div>
     </div>
   );

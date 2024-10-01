@@ -4,6 +4,8 @@ import Header from "../components/Header/page";
 import AboutSection from "../components/AboutSection";
 import PropertiesSection from "../components/PropertiesSection";
 import NewsSection from "../components/NewsSection";
+// import RecentCard from "../components/RecentCard/page";
+import Recent from "../components/RecentCard/page";
 
 const Acceuil: React.FC = () => {
   return (
@@ -12,6 +14,7 @@ const Acceuil: React.FC = () => {
       <AboutSection />
       <PropertiesSection />
       <NewsSection />
+      {/* <Recent /> */}
     </div>
   );
 };

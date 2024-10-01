@@ -32,7 +32,9 @@
 }
 
 .navbarContainer {
-  max-width: 1200px;
+  width: 80%;
+  /* background-color: white; */
+
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
@@ -65,7 +67,7 @@
 
 .navbarLink a {
   text-decoration: none;
-  color:  #fff;
+  color: #fff;
   padding: 15px;
 }
 .navbar.scrolled .navbarLink a {
@@ -190,7 +192,7 @@
   color: rgb(89, 171, 227);
 }
 .navbar.scrolled .navbarLogoText {
-  border: 2px solid  #888;
+  border: 2px solid #888;
   color: rgb(16, 15, 15);
   font-family: Poppins, sans-serif;
   font-size: 30px;

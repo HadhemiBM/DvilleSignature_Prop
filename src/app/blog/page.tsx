@@ -2,70 +2,19 @@
 
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import I_360 from "../../img/gallery/360_240.jpg";
-import Image from "next/image";
-import Link from "next/link";
+import RecentCard from "../components/RecentCard/RecentCard";
+import { list } from "../data/data";
 
 const Blog: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 8;
-
-  const blogPosts = [
-    {
-      id: 1,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
-    {
-      id: 2,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "User",
-      comments: 6,
-    },
-    {
-      id: 3,
-      title: "title.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
-    {
-      id: 4,
-      title: "titre.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
-    {
-      id: 5,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "User",
-      comments: 6,
-    },
-    {
-      id: 6,
-      title: "nom.",
-      description: "description.",
-      date: "28 Aout, 2024",
-      role: "Admin",
-      comments: 6,
-    },
-  ];
+  const postsPerPage = 6;
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
   return (
     <>
       <div className={styles.blackDiv}></div>
@@ -84,52 +33,25 @@ const Blog: React.FC = () => {
         <div className={styles.blogs}>
           <div className={styles.Gallery}>
             <div className={styles.cards}>
-              {currentPosts.map((post) => (
-                <div key={post.id} className="card">
-                  <div className={styles.cardStatus}>
-                    <p className={styles.cardStatusP}>{post.date}</p>
-                  </div>
-                  <Image
-                    className="card-img-top"
-                    src={I_360}
-                    alt="Card image cap"
-                  />
-                  <ul className="list-group list-group-flush">
-                    <li className="list-group-item">
-                      <Link href="/blogDetails">
-                        <h3>{post.title}</h3>
-                      </Link>
-                    </li>
-                    <li className="list-group-item">{post.description}</li>
-                  </ul>
-                  <div className={styles.card_body}>
-                    <p className="card-Role">
-                      <i className="fa-solid fa-user"></i> {post.role}
-                    </p>
-                    <p className="card-comment">
-                      <i className="fa-solid fa-comment"></i> {post.comments}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              <RecentCard posts={currentPosts} />
             </div>
 
             <div className={styles.pagination}>
-              {[
-                ...Array(Math.ceil(blogPosts.length / postsPerPage)).keys(),
-              ].map((number) => (
-                <button
-                  key={number + 1}
-                  onClick={() => paginate(number + 1)}
-                  className={
-                    number + 1 === currentPage
-                      ? styles.activePage
-                      : styles.pageButton
-                  }
-                >
-                  {number + 1}
-                </button>
-              ))}
+              {[...Array(Math.ceil(list.length / postsPerPage)).keys()].map(
+                (number) => (
+                  <button
+                    key={number + 1}
+                    onClick={() => paginate(number + 1)}
+                    className={
+                      number + 1 === currentPage
+                        ? styles.activePage
+                        : styles.pageButton
+                    }
+                  >
+                    {number + 1}
+                  </button>
+                )
+              )}
             </div>
           </div>
 
@@ -157,6 +79,15 @@ const Blog: React.FC = () => {
                   <span>Commercial</span>
                   <span>1000</span>
                 </li>
+                <li>
+                  <span>Villa</span>
+                  <span>800</span>
+                </li>
+                <li>
+                  <span>Bungalow</span>
+                  <span>200</span>
+                </li>
+
                 <ul>
                   <li>
                     <span>Category 2.1</span>
@@ -167,14 +98,6 @@ const Blog: React.FC = () => {
                     <span>100</span>
                   </li>
                 </ul>
-                <li>
-                  <span>Villa</span>
-                  <span>800</span>
-                </li>
-                <li>
-                  <span>Bungalow</span>
-                  <span>200</span>
-                </li>
               </ul>
             </div>
 
