@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(68, 68, 68, 0.7)),
+    url("https://res.cloudinary.com/dy5gov7fj/image/upload/v1727661426/signin_dtjtqf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Changed to cover for better responsiveness */
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding: 12% 0;
+}
+
+/* .card {
+  flex: 0 1 calc(40% - 7%);
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.032);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  box-sizing: border-box;
+  -webkit-backdrop-filter: blur(8px);
+
+  margin-bottom: 40px;
+} */
+.card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  flex: 0 1 calc(35% - 1%);
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.card_title {
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pricing {
+  font-weight: normal;
+  font-size: 96px;
+  color: #59abe3;
+}
+
+.pricing .small {
+  font-size: 16px;
+}
+
+.hr {
+  margin-top: 70px;
+}
+
+.features {
+  margin: 40px 0;
+  list-style-position: inside;
+}
+
+.features li {
+  padding-bottom: 10px;
+}
+
+.cta_btn {
+  width: 70%; /* Width of the button */
+  display: inline-block; /* Make it inline-block to respect the width */
+  text-align: center; /* Center text inside the button */
+  background: rgba(21, 23, 24, 0.7);
+  border-radius: 29px;
+  padding: 20px 0;
+  color: #59abe3;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: background 0.3s ease;
+  align-self: center; /* Centers button in flex container */
+  margin: 10px auto; /* Center the button horizontally */
+}
+
+.cta_btn:hover {
+  background: #000;
+}
+@media only screen and (max-width: 1024px) {
+  .grid {
+    flex-direction: column;
+  }
+  .card {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .card {
+    padding: 30px;
+  }
+  .card_title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .pricing {
+    font-size: 52px;
+  }
+  .hr {
+    margin-top: 50px;
+  }
+  .cta_btn {
+    font-size: 11px;
+  }
+}
