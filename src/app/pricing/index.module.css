@@ -8,7 +8,7 @@
     /* url("https://res.cloudinary.com/dy5gov7fj/image/upload/v1727661426/signin_dtjtqf.jpg"); */
       url("../../img/gallery/low2.jpeg");
   background-repeat: no-repeat;
-  background-size: cover; /* Changed to cover for better responsiveness */
+  background-size: cover;
   color: white;
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -17,25 +17,21 @@
   align-content: center;
   flex-direction: column;
 }
-
 .grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 60%;
   flex-direction: row;
-
   padding: 12% 0;
   align-self: center;
   align-items: center;
   align-content: center;
 }
-
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   flex: 0 1 calc(30% -1%);
   padding: 50px;
   background: rgba(255, 255, 255, 0.1);
@@ -53,34 +49,28 @@
   text-align: center;
   color: #ffffff;
 }
-
 .pricing {
   font-weight: normal;
   font-size: 96px;
   color: #ffffff;
 }
-
 .pricing .small {
   font-size: 16px;
 }
-
 .hr {
   margin-top: 70px;
 }
-
 .features {
   margin: 40px 0;
   list-style-position: inside;
 }
-
 .features li {
   padding-bottom: 10px;
 }
-
 .cta_btn {
-  width: 70%; /* Width of the button */
-  display: inline-block; /* Make it inline-block to respect the width */
-  text-align: center; /* Center text inside the button */
+  width: 70%;
+  display: inline-block;
+  text-align: center;
   background: rgba(21, 23, 24, 0.7);
   border-radius: 29px;
   padding: 20px 0;
@@ -91,8 +81,8 @@
   text-decoration: none;
   letter-spacing: 2px;
   transition: background 0.3s ease;
-  align-self: center; /* Centers button in flex container */
-  margin: 10px auto; /* Center the button horizontally */
+  align-self: center;
+  margin: 10px auto;
 }
 
 .cta_btn:hover {

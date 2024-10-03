@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 import tt from "../../img/gallery/woman.jpg";
+import SideNav from "../components/SideNav";
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -139,6 +141,7 @@ const Contact: React.FC = () => {
             Submit
           </button>
         </form>
+        {/* <SideNav  /> */}
       </div>
     </>
   );

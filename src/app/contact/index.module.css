@@ -1,13 +1,15 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 40px;
   align-self: center;
   font-family: Poppins, sans-serif;
   background-color: rgb(255, 255, 255);
   width: 90%;
+  align-items: center;
+  align-content: center;
 }
 
 .blackDiv {

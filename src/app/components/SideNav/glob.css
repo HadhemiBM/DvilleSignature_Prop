@@ -1,0 +1,15 @@
+/* :root {
+  --background: #9c88ff;
+  --navbar_width: 256px;
+  --navbar_width_min: 80px;
+  --navbar_dark_primary: #18283b;
+  --navbar_dark_secondary: #2c3e50;
+  --navbar_light_primary: #f5f6fa;
+  --navbar_light_secondary: #8392a5;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--background);
+} */
