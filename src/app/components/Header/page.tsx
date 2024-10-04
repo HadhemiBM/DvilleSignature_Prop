@@ -72,75 +72,111 @@ const Header: React.FC = () => {
           <div className="carousel-item active" data-bs-interval="4000">
             <Image
               width={1000}
-              height={700}
+              height={500}
               alt="Slide 1"
               src={two}
               className="d-block w-100"
             />
             <div className={styles.ProductInfo}>
-              <span className={styles.aa_top_slider_catg}>Duplex</span>
-              <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
+              <h2 className={styles.aa_top_slider_title}>
+                Welcome to Your Dream office!
+              </h2>
+              {/* <p className={styles.aa_top_slider_message}>
+                Whether you're seeking luxury, comfort, or the perfect
+                investment, you've come to the right place. Explore our
+                exclusive listings, tailored just for you, and discover your
+                future home with us. We’re here to turn your vision into
+                reality.
+              </p>
               <p className={styles.aa_top_slider_location}>
                 <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
               </p>
-              <span className={styles.aa_top_slider_off}>30% OFF</span>
-              <p className={styles.aa_top_slider_price}>$460,000</p>
+              <span className={styles.aa_top_slider_off}>
+                Special Deals Await
+              </span>
+              <p className={styles.aa_top_slider_price}>
+                Starting from $200,000
+              </p>
               <a href="#" className={styles.aa_top_slider_btn}>
-                Read More
+                Discover More
                 <span
                   className={`${styles.fa} ${styles.fa_angle_double_right}`}
                 ></span>
-              </a>
+              </a> */}
             </div>
           </div>
 
           <div className="carousel-item" data-bs-interval="4000">
             <Image
               width={1920}
-              height={700}
+              height={500}
               alt="Slide 2"
               src={one}
               className="d-block w-100"
             />
             <div className={styles.ProductInfo}>
-              <span className={styles.aa_top_slider_catg}>Duplex</span>
-              <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
+              <h2 className={styles.aa_top_slider_title}>
+                Welcome to Your Dream Home!
+              </h2>
+              {/* <p className={styles.aa_top_slider_message}>
+                Whether you're seeking luxury, comfort, or the perfect
+                investment, you've come to the right place. Explore our
+                exclusive listings, tailored just for you, and discover your
+                future home with us. We’re here to turn your vision into
+                reality.
+              </p>
               <p className={styles.aa_top_slider_location}>
                 <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
               </p>
-              <span className={styles.aa_top_slider_off}>30% OFF</span>
-              <p className={styles.aa_top_slider_price}>$460,000</p>
+              <span className={styles.aa_top_slider_off}>
+                Special Deals Await
+              </span>
+              <p className={styles.aa_top_slider_price}>
+                Starting from $200,000
+              </p>
               <a href="#" className={styles.aa_top_slider_btn}>
-                Read More
+                Discover More
                 <span
                   className={`${styles.fa} ${styles.fa_angle_double_right}`}
                 ></span>
-              </a>
+              </a> */}
             </div>
           </div>
 
           <div className="carousel-item" data-bs-interval="4000">
             <Image
               width={1920}
-              height={700}
+              height={500}
               alt="Slide 3"
               src={three}
               className="d-block w-100"
             />
             <div className={styles.ProductInfo}>
-              <span className={styles.aa_top_slider_catg}>Duplex</span>
-              <h2 className={styles.aa_top_slider_title}>1560 Square Feet</h2>
+              <h2 className={styles.aa_top_slider_title}>
+                Welcome to Your Dream Apartment!
+              </h2>
+              {/* <p className={styles.aa_top_slider_message}>
+                Whether you're seeking luxury, comfort, or the perfect
+                investment, you've come to the right place. Explore our
+                exclusive listings, tailored just for you, and discover your
+                future home with us. We’re here to turn your vision into
+                reality.
+              </p>
               <p className={styles.aa_top_slider_location}>
                 <i className="fa-solid fa-location-dot"></i> Dubai, (UAE)
               </p>
-              <span className={styles.aa_top_slider_off}>30% OFF</span>
-              <p className={styles.aa_top_slider_price}>$460,000</p>
+              <span className={styles.aa_top_slider_off}>
+                Special Deals Await
+              </span>
+              <p className={styles.aa_top_slider_price}>
+                Starting from $200,000
+              </p>
               <a href="#" className={styles.aa_top_slider_btn}>
-                Read More
+                Discover More
                 <span
                   className={`${styles.fa} ${styles.fa_angle_double_right}`}
                 ></span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
