@@ -8,13 +8,12 @@ const SideBar: React.FC = () => {
       <nav className={styles.nav__cont}>
         <ul className={styles.nav}>
           <li className={styles.nav__items}>
-        
             <i
               className="fa-solid fa-house"
               // viewBox="0 0 48 48"
             ></i>
-            
-            <a href="">Home</a>
+
+            <a href="./">Home</a>
           </li>
           <li className={styles.nav__items}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">

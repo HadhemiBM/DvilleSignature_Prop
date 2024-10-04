@@ -2,8 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import tt from "../../img/gallery/woman.jpg";
-import SideNav from "../components/SideNav";
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +27,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic
+    
     console.log("Form Data:", formData);
   };
 
@@ -138,10 +137,10 @@ const Contact: React.FC = () => {
             className={styles.textarea}
           />
           <button type="submit" className={styles.submitButton}>
-            Submit
+            Send
           </button>
         </form>
-        {/* <SideNav  /> */}
+      
       </div>
     </>
   );

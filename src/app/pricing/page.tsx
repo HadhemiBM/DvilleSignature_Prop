@@ -1,4 +1,7 @@
+
+
 import React from "react";
+
 import styles from "./index.module.css";
 const pricingData = [
   {
@@ -47,7 +50,7 @@ const pricingData = [
 const Pricing: React.FC = () => {
   return (
     <div className={styles.container}>
-    
+      <div className={styles.blackDiv}></div>
       <div className={styles.grid}>
         {pricingData.map((plan, index) => (
           <div key={index} className={styles.card}>
@@ -63,12 +66,10 @@ const Pricing: React.FC = () => {
               ))}
             </ul>
             <p className={styles.notes}>{plan.notes}</p>
-            
 
             <a href="#" className={styles.cta_btn}>
-            Buy Now
-          </a>
-         
+              Buy Now
+            </a>
           </div>
         ))}
       </div>

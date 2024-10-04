@@ -1,43 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import styles from "./index.module.css";
-import tt from "../../img/gallery/woman.jpg";
+
 import I_370 from "../../img/gallery/370_220.jpg";
 import Image from "next/image";
 const Gallery: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    service: "",
-    budget: "",
-    message: "",
-  });
 
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission logic
-    console.log("Form Data:", formData);
-  };
 
   return (
     <>
       <div className={styles.blackDiv}></div>
       <div className={styles.AboutUS}>
-        {/* <h2 className={styles.AboutUSTitle}>About Us</h2>
-        <span className={styles.spanTitle}></span> */}
+      
         <div className={styles.titleContainer}>
           <h2 className={styles.AboutUSTitle}>Gallery View</h2>
           <div className={styles.titleDecoration}>

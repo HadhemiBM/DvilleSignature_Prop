@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./index.module.css"; 
+import styles from "./index.module.css";
 import Image from "next/image";
-
 
 type Post = {
   date: string;
