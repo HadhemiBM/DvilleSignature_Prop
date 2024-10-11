@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import styles from "./index.module.css";
 import { featured } from "../../data/data";
+
 
 // Define the type for each featured item
 type FeaturedItem = {
@@ -10,6 +13,7 @@ type FeaturedItem = {
 };
 
 const PropertiesSection: React.FC = () => {
+
   return (
     <div className={styles.bodyy}>
       <div className={styles.titleContainer}>
@@ -30,7 +34,6 @@ const PropertiesSection: React.FC = () => {
         Don’t miss out on the latest properties on the market!
       </p>
 
-   
       <div className={styles.gridContainer}>
         {featured.map((item: FeaturedItem, index) => (
           <div className={styles.box} key={index}>

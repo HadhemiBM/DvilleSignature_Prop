@@ -1,17 +1,41 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./index.module.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+
+type Property = {
+  id: number;
+  name: string;
+  status: string;
+  price: string;
+};
+
+type User = {
+  id: number;
+  name: string;
+  email: string;
+  status: string;
+};
+
+type Payment = {
+  id: number;
+  user: string;
+  subscription: string;
+  amount: string;
+  status: string;
+};
+
 const Dashboard: React.FC = () => {
   const router = useRouter();
-  const properties = [
+
+  const properties: Property[] = [
     { id: 1, name: "Luxury Villa", status: "Available", price: "$500,000" },
     { id: 2, name: "Cozy Apartment", status: "Sold", price: "$200,000" },
   ];
 
-  const users = [
+  const users: User[] = [
     { id: 1, name: "John Doe", email: "john@example.com", status: "Active" },
     {
       id: 2,
@@ -21,7 +45,7 @@ const Dashboard: React.FC = () => {
     },
   ];
 
-  const payments = [
+  const payments: Payment[] = [
     {
       id: 1,
       user: "John Doe",
@@ -39,7 +63,6 @@ const Dashboard: React.FC = () => {
   ];
 
   const handleEdit = (id: number) => {
-    // console.log("Edit item with ID:", id);
     router.push(`./blogDetails?id=${id}`);
   };
 
@@ -51,17 +74,6 @@ const Dashboard: React.FC = () => {
     <>
       <div className={styles.blackDiv}></div>
       <div className={styles.dashboardContainer}>
-        {/* 
-        <aside className={styles.sidebar}>
-          <h2 className={styles.logo}>Admin Dashboard</h2>
-          <ul className={styles.navLinks}>
-            <li>Overview</li>
-            <li>Property Management</li>
-            <li>User Management</li>
-            <li>Subscription & Payments</li>
-            <li>Analytics & Reports</li>
-          </ul>
-        </aside> */}
         <main className={styles.mainContent}>
           <section className={styles.overview}>
             <h1>Dashboard Overview</h1>
@@ -76,7 +88,12 @@ const Dashboard: React.FC = () => {
               </div>
               <div className={styles.metricCard}>
                 <h2>Active Subscriptions</h2>
-                <p>1</p>
+                <p>
+                  {
+                    payments.filter((payment) => payment.status === "Paid")
+                      .length
+                  }
+                </p>
               </div>
             </div>
           </section>
@@ -115,6 +132,7 @@ const Dashboard: React.FC = () => {
             </table>
           </section>
 
+          {/* User Management Section */}
           <section className={styles.managementSection}>
             <h2>User Management</h2>
             <table className={styles.userTable}>
@@ -144,6 +162,7 @@ const Dashboard: React.FC = () => {
             </table>
           </section>
 
+          {/* Subscription & Payments Section */}
           <section className={styles.managementSection}>
             <h2>Subscription & Payments</h2>
             <Link href="./pricing">
